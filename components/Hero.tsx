@@ -82,7 +82,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
             className="mt-8 max-w-lg text-xl text-cream/80 leading-relaxed"
           >
-            MYCORA farms fresh mushrooms and gets them to your door the same
+            MUCORA farms fresh mushrooms and gets them to your door the same
             day they&apos;re picked — no cold storage, no middlemen, just what
             was growing this morning.
           </motion.p>

@@ -41,7 +41,7 @@ export default function Navbar() {
             <span className="relative flex h-10 w-10 md:h-11 md:w-11 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white shadow-sm ring-1 ring-black/5">
               <img
                 src="/logo.png"
-                alt="MYCORA logo"
+                alt="MUCORA logo"
                 className="h-full w-full object-cover"
               />
             </span>
@@ -50,7 +50,7 @@ export default function Navbar() {
                 solid ? "text-forest-deep" : "text-cream"
               }`}
             >
-              MYCORA
+              MUCORA
             </span>
           </a>
 

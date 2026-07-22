@@ -2,8 +2,8 @@ export const CONTACT = {
   phoneDisplay: "+91 84204 24903",
   phoneHref: "tel:+918420424903",
   whatsappHref:
-    "https://wa.me/918420424903?text=Hi%20MYCORA%2C%20I%27d%20like%20to%20order%20fresh%20mushrooms.",
-  email: "hello@mycora.in",
+    "https://wa.me/918420424903?text=Hi%20MUCORA%2C%20I%27d%20like%20to%20order%20fresh%20mushrooms.",
+  email: "hello@mucora.in",
 };
 
 export type Product = {
@@ -111,7 +111,7 @@ export const TESTIMONIALS = [
     name: "Chef Karan M.",
     role: "Restaurant owner",
     quote:
-      "MYCORA is the only supplier whose shiitake I trust for the tasting menu. Consistent size, consistent quality.",
+      "MUCORA is the only supplier whose shiitake I trust for the tasting menu. Consistent size, consistent quality.",
   },
   {
     name: "Priya & Dev",

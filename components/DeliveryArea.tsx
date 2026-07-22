@@ -27,7 +27,7 @@ export default function DeliveryArea() {
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-6 max-w-md text-cream/70 leading-relaxed">
-                MYCORA is a local-first farm. We deliver fresh within our
+                MUCORA is a local-first farm. We deliver fresh within our
                 current radius today, with more zones opening as our harvest
                 grows — and a national shipping line on the way.
               </p>

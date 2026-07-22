@@ -1,12 +1,12 @@
-# MYCORA — Website
+# MUCORA — Website
 
-A modern, animated Next.js website for MYCORA, built with the App Router,
+A modern, animated Next.js website for MUCORA, built with the App Router,
 TypeScript, Tailwind CSS and Framer Motion.
 
 ## What's inside
 
 - **Next.js 14** (App Router) + TypeScript
-- **Tailwind CSS** with MYCORA's brand palette wired in as design tokens
+- **Tailwind CSS** with MUCORA's brand palette wired in as design tokens
 - **Framer Motion** for scroll reveals, parallax hero, and the animated
   "mycelium thread" signature motif
 - **lucide-react** for icons
@@ -54,9 +54,9 @@ Visit `http://localhost:3000`.
 ```bash
 git init
 git add .
-git commit -m "Initial MYCORA website"
+git commit -m "Initial MUCORA website"
 git branch -M main
-git remote add origin https://github.com/<your-username>/mycora-website.git
+git remote add origin https://github.com/<your-username>/mucora-website.git
 git push -u origin main
 ```
 
@@ -78,7 +78,7 @@ app/
 components/
   Navbar.tsx          Sticky nav + hamburger mobile menu
   Hero.tsx            Parallax hero with drifting spores
-  WhyMycora.tsx        Feature grid
+  WhyMucora.tsx        Feature grid
   Process.tsx          "How it grows" timeline
   Products.tsx         Shop grid, WhatsApp order links
   DeliveryArea.tsx      Local delivery zones + marquee

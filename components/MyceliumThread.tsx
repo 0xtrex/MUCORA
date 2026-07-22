@@ -10,7 +10,7 @@ type Props = {
 };
 
 /**
- * MYCORA's signature motif: a branching mycelium thread that draws itself
+ * MUCORA's signature motif: a branching mycelium thread that draws itself
  * in as it enters the viewport, echoing the underground fungal network the
  * brand is named for. Used sparingly as a connective device between sections.
  */

@@ -12,12 +12,12 @@ export default function Footer() {
               <span className="relative flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white shadow-sm ring-1 ring-black/5">
                 <img
                   src="/logo.png"
-                  alt="MYCORA logo"
+                  alt="MUCORA logo"
                   className="h-full w-full object-cover"
                 />
               </span>
               <span className="font-display text-lg tracking-[0.14em] font-semibold text-forest-deep">
-                MYCORA
+                MUCORA
               </span>
             </a>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-forest-deep/60">
@@ -99,7 +99,7 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-forest/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-forest-deep/45">
-            &copy; {year} MYCORA. All rights reserved.
+            &copy; {year} MUCORA. All rights reserved.
           </p>
           <p className="text-xs text-forest-deep/45">
             Grown with care, delivered with speed.

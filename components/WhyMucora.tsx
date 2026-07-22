@@ -26,7 +26,7 @@ const FEATURES = [
   },
 ];
 
-export default function WhyMycora() {
+export default function WhyMucora() {
   return (
     <section className="relative bg-cream py-28 md:py-36">
       <div className="max-w-content mx-auto px-6 md:px-10">
@@ -34,7 +34,7 @@ export default function WhyMycora() {
           <div className="flex items-center gap-3 mb-6">
             <span className="h-px w-10 bg-forest/40" />
             <span className="font-mono text-xs tracking-[0.25em] uppercase text-forest/60">
-              Why MYCORA
+              Why MUCORA
             </span>
           </div>
         </Reveal>

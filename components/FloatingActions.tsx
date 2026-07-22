@@ -22,7 +22,7 @@ export default function FloatingActions() {
     >
       <a
         href={CONTACT.phoneHref}
-        aria-label="Call MYCORA now"
+        aria-label="Call MUCORA now"
         className="group flex h-12 w-12 items-center justify-center rounded-full bg-forest-deep text-cream shadow-lg shadow-forest-deep/30 transition-transform hover:scale-105 active:scale-95"
       >
         <Phone className="h-5 w-5" strokeWidth={2} />
@@ -31,7 +31,7 @@ export default function FloatingActions() {
         href={CONTACT.whatsappHref}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Message MYCORA on WhatsApp"
+        aria-label="Message MUCORA on WhatsApp"
         className="relative flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg shadow-[#25D366]/40 transition-transform hover:scale-105 active:scale-95"
       >
         <span className="absolute inset-0 rounded-full bg-[#25D366] animate-pulseRing" />

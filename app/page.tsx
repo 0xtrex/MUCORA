@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import WhyMycora from "@/components/WhyMycora";
+import WhyMucora from "@/components/WhyMucora";
 import Products from "@/components/Products";
 import Process from "@/components/Process";
 import DeliveryArea from "@/components/DeliveryArea";
@@ -14,7 +14,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <WhyMycora />
+        <WhyMucora />
         <Process />
         <Products />
         <DeliveryArea />

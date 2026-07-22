@@ -1,4 +1,4 @@
-Place your real round MYCORA logo here as "logo.png" (recommended: at least
+Place your real round MUCORA logo here as "logo.png" (recommended: at least
 200x200px, square, transparent or solid background). The navbar and footer
 are already wired to /logo.png — just drop the file in and it appears
 automatically. Delete this text file once your logo is in place.

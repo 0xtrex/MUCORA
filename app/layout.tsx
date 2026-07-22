@@ -25,15 +25,15 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mycora.in"),
+  metadataBase: new URL("https://mucora.in"),
   title: {
-    default: "MYCORA — Farm-Fresh Mushrooms, Grown Local",
-    template: "%s — MYCORA",
+    default: "MUCORA — Farm-Fresh Mushrooms, Grown Local",
+    template: "%s — MUCORA",
   },
   description:
-    "MYCORA grows and delivers fresh, premium mushrooms straight from our farm to your kitchen. Order online or on WhatsApp for same-day local delivery.",
+    "MUCORA grows and delivers fresh, premium mushrooms straight from our farm to your kitchen. Order online or on WhatsApp for same-day local delivery.",
   keywords: [
-    "MYCORA",
+    "MUCORA",
     "fresh mushrooms",
     "buy mushrooms online",
     "oyster mushroom",
@@ -47,10 +47,10 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "MYCORA — Farm-Fresh Mushrooms, Grown Local",
+    title: "MUCORA — Farm-Fresh Mushrooms, Grown Local",
     description:
       "Fresh, premium mushrooms grown local and delivered to your door. Order on WhatsApp or by phone.",
-    siteName: "MYCORA",
+    siteName: "MUCORA",
     type: "website",
   },
 };
