@@ -25,21 +25,27 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mucora.in"),
+  metadataBase: new URL("https://mucora.shop"),
   title: {
-    default: "MUCORA — Farm-Fresh Mushrooms, Grown Local",
+    default: "MUCORA — Fresh Mushrooms Online in Kolkata, Barasat & West Bengal",
     template: "%s — MUCORA",
   },
   description:
-    "MUCORA grows and delivers fresh, premium mushrooms straight from our farm to your kitchen. Order online or on WhatsApp for same-day local delivery.",
+    "Buy fresh mushrooms online from MUCORA — a local farm growing oyster, button, shiitake, milky, portobello and lion's mane mushrooms. Same-day delivery across Kolkata, Barasat and West Bengal.",
   keywords: [
     "MUCORA",
+    "mushroom",
     "fresh mushrooms",
     "buy mushrooms online",
-    "oyster mushroom",
-    "shiitake",
+    "mushroom online",
     "button mushroom",
-    "local mushroom delivery",
+    "oyster mushroom",
+    "shiitake mushroom",
+    "mushroom in kolkata",
+    "mushroom in west bengal",
+    "mushroom in barasat",
+    "mushroom delivery kolkata",
+    "local mushroom farm",
   ],
   icons: {
     icon: "/favicon.ico",
@@ -47,12 +53,28 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "MUCORA — Farm-Fresh Mushrooms, Grown Local",
+    title: "MUCORA — Fresh Mushrooms Online in Kolkata, Barasat & West Bengal",
     description:
-      "Fresh, premium mushrooms grown local and delivered to your door. Order on WhatsApp or by phone.",
+      "Farm-fresh mushrooms, grown local and delivered same-day. Order online or on WhatsApp.",
     siteName: "MUCORA",
     type: "website",
   },
+};
+
+const localBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "MUCORA",
+  description:
+    "MUCORA is a local mushroom farm growing and delivering fresh oyster, button, shiitake, milky, portobello and lion's mane mushrooms across Kolkata, Barasat and West Bengal.",
+  telephone: "+91-8420424903",
+  areaServed: [
+    { "@type": "City", name: "Kolkata" },
+    { "@type": "City", name: "Barasat" },
+    { "@type": "State", name: "West Bengal" },
+  ],
+  priceRange: "₹₹",
+  url: "https://mucora.shop",
 };
 
 export default function RootLayout({

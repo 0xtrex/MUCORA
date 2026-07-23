@@ -56,7 +56,7 @@ git init
 git add .
 git commit -m "Initial MUCORA website"
 git branch -M main
-git remote add origin https://github.com/<your-username>/mucora-website.git
+git remote add origin https://github.com/<your-username>/mycora-website.git
 git push -u origin main
 ```
 
@@ -78,7 +78,7 @@ app/
 components/
   Navbar.tsx          Sticky nav + hamburger mobile menu
   Hero.tsx            Parallax hero with drifting spores
-  WhyMucora.tsx        Feature grid
+  WhyMycora.tsx        Feature grid
   Process.tsx          "How it grows" timeline
   Products.tsx         Shop grid, WhatsApp order links
   DeliveryArea.tsx      Local delivery zones + marquee
