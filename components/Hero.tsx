@@ -61,7 +61,7 @@ export default function Hero() {
           >
             <span className="h-px w-10 bg-taupe" />
             <span className="font-mono text-xs md:text-[13px] tracking-[0.25em] uppercase text-taupe-light text-taupe">
-              Grown local &middot; Delivered fresh
+              Everyday Fresh &middot; Grown Local
             </span>
           </motion.div>
 

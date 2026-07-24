@@ -52,18 +52,39 @@ export default function Products() {
                 transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
                 className="group relative flex flex-col rounded-2xl border border-cream/10 bg-cream/[0.03] p-6 overflow-hidden h-full"
               >
-                {p.tag && (
-                  <span className="absolute top-5 right-5 font-mono text-[10px] uppercase tracking-wider rounded-full border border-cream/25 text-cream/70 px-2.5 py-1">
+                {p.tag && p.inStock !== false && (
+                  <span className="absolute top-5 right-5 z-10 font-mono text-[10px] uppercase tracking-wider rounded-full border border-cream/25 text-cream/70 px-2.5 py-1">
                     {p.tag}
                   </span>
                 )}
                 <div
-                  className={`relative flex h-40 items-center justify-center rounded-xl ${VARIANT_BG[p.variant]} overflow-hidden`}
+                  className={`relative flex aspect-square items-center justify-center rounded-xl ${VARIANT_BG[p.variant]} overflow-hidden`}
                 >
                   <MushroomMark
                     strokeWidth={0.9}
-                    className="h-24 w-24 text-cream/90 transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-3"
+                    className={`h-24 w-24 text-cream/90 transition-transform duration-500 group-hover:scale-110 group-hover:-rotate-3 ${
+                      p.inStock === false ? "opacity-40" : ""
+                    }`}
                   />
+                  {/* Real product photo — sits above the placeholder mark and
+                      hides itself automatically if the file isn't found yet */}
+                  <img
+                    src={`/mushrooms/${p.id}.jpg`}
+                    alt={`${p.name} — fresh mushroom from MUCORA`}
+                    className={`absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 ${
+                      p.inStock === false ? "grayscale opacity-50" : ""
+                    }`}
+                    onError={(e) => {
+                      e.currentTarget.style.display = "none";
+                    }}
+                  />
+                  {p.inStock === false && (
+                    <div className="absolute inset-0 flex items-center justify-center bg-forest-deep/20">
+                      <span className="rounded-full bg-forest-deep/90 backdrop-blur-sm px-4 py-1.5 text-[11px] font-mono uppercase tracking-wider text-cream border border-cream/20">
+                        Out of Stock
+                      </span>
+                    </div>
+                  )}
                 </div>
 
                 <div className="mt-6 flex-1 flex flex-col">
@@ -80,17 +101,41 @@ export default function Products() {
                       </span>
                       <span className="ml-1.5 text-xs text-cream/45">/ {p.unit}</span>
                     </div>
-                    <a
-                      href={`${CONTACT.whatsappHref}%20I%27d%20like%20to%20order%3A%20${encodeURIComponent(
-                        p.name
-                      )}.`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 rounded-full bg-cream px-4 py-2 text-[13px] font-semibold text-forest-deep transition-all hover:bg-taupe active:scale-95"
-                    >
-                      Order
-                    </a>
+                    {p.inStock === false ? (
+                      <a
+                        href={`${CONTACT.whatsappHref}%20Please%20notify%20me%20when%20${encodeURIComponent(
+                          p.name
+                        )}%20is%20back%20in%20stock.`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 rounded-full border border-cream/25 px-4 py-2 text-[13px] font-semibold text-cream/70 transition-all hover:border-cream/50 hover:text-cream active:scale-95"
+                      >
+                        Notify Me
+                      </a>
+                    ) : (
+                      <a
+                        href={`${CONTACT.whatsappHref}%20I%27d%20like%20to%20order%3A%20${encodeURIComponent(
+                          p.name
+                        )}.`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 rounded-full bg-cream px-4 py-2 text-[13px] font-semibold text-forest-deep transition-all hover:bg-taupe active:scale-95"
+                      >
+                        Order
+                      </a>
+                    )}
                   </div>
+
+                  <a
+                    href={`${CONTACT.whatsappHref}%20I%27d%20like%20to%20discuss%20bulk%20pricing%20for%3A%20${encodeURIComponent(
+                      p.name
+                    )}.`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 inline-flex items-center justify-center gap-1.5 rounded-full border border-cream/15 px-4 py-2.5 text-[12.5px] font-medium text-cream/60 transition-all hover:border-cream/40 hover:text-cream/90"
+                  >
+                    Bulk order? Negotiate price &rarr;
+                  </a>
                 </div>
               </motion.div>
             </Reveal>
