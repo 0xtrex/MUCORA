@@ -3,7 +3,7 @@ export const CONTACT = {
   phoneHref: "tel:+918420424903",
   whatsappHref:
     "https://wa.me/918420424903?text=Hi%20MUCORA%2C%20I%27d%20like%20to%20order%20fresh%20mushrooms.",
-  email: "hello@mucora.in",
+  email: "mucora.shop@gmail.com",
 };
 
 export type Product = {
