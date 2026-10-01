@@ -37,7 +37,7 @@ export default function Navbar() {
     >
       <div className="max-w-content mx-auto px-6 md:px-10">
         <div className="flex items-center justify-between h-[80px] md:h-[88px]">
-          <a href="#top" className="flex items-center gap-3 group">
+          <a href="/" className="flex items-center gap-3 group">
             <span className="relative flex h-10 w-10 md:h-11 md:w-11 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white shadow-sm ring-1 ring-black/5">
               <img
                 src="/logo.png"
@@ -80,7 +80,7 @@ export default function Navbar() {
               {CONTACT.phoneDisplay}
             </a>
             <a
-              href="#shop"
+              href="/#shop"
               className={`ml-2 inline-flex items-center rounded-full px-6 py-3 text-[15px] font-semibold transition-all active:scale-[0.97] ${
                 solid
                   ? "bg-forest text-cream hover:bg-forest-deep hover:shadow-lg hover:shadow-forest/20"

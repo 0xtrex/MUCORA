@@ -137,11 +137,12 @@ export const DELIVERY_AREAS = [
 ];
 
 export const NAV_LINKS = [
-  { label: "Shop", href: "#shop" },
-  { label: "Our Process", href: "#process" },
-  { label: "Delivery", href: "#delivery" },
-  { label: "Reviews", href: "#reviews" },
-  { label: "Contact", href: "#contact" },
+  { label: "Shop", href: "/#shop" },
+  { label: "Our Process", href: "/#process" },
+  { label: "Delivery", href: "/#delivery" },
+  { label: "Reviews", href: "/#reviews" },
+  { label: "Contact", href: "/#contact" },
   { label: "Gallery", href: "/gallery" },
-  { label: "Recipes", href: "/recipes" }
+  { label: "Recipes", href: "/recipes" },
+  { label: "Blog", href: "/blog" },
 ];
